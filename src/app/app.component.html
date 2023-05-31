@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+            <!-- BrandName button in Navbar -->
+      <li class="active"><a routerLink="home"><span class="glyphicon glyphicon-home"></span> Complaint Redressal System</a></li>
+      
+            <!-- Developer button in Navbar -->
+      <li><a routerLink="amit"><span class="glyphicon glyphicon-envelope"></span> Developer : Code Mind Developers</a></li>
+     
+            <!-- Login button in Navbar -->
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in"> </span>  Login <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="customerLogin">Customer Login</a></li>
+          <li><a routerLink="managerLogin">Manager Login</a></li>
+          <li><a routerLink="engineerLogin">Engineer Login</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+            <!-- SignUp button in Navbar -->
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle " data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> SignUp <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="customerSignup">Customer Signup</a></li>
+          <li><a routerLink="managerSignup">Manager Signup</a></li>
+          <li><a routerLink="engineerSignup">Engineer Signup</a></li>
+        </ul>
+      </li>
+
+            <!-- ContactUs button in Navbar -->
+      <li><a routerLink="contactUs"><span class="glyphicon glyphicon-phone-alt"></span> Contact Us</a></li>
+     
+            <!-- Logout button in Navbar -->
+      <li><a routerLink="home"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

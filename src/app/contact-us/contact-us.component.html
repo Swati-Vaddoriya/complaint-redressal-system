@@ -1,0 +1,27 @@
+<div class="container" style="text-align:center" >
+    <form onsubmit="home">
+      <div class="row">
+        <h2 style="text-align:center" ><b style="color: chartreuse;">Contact Us</b></h2>
+    
+        <div class="col" style="text-align: center;">  
+          
+          <input type="text" name="name" placeholder="Enter Your FullName" style="text-align:center" #myName required><br>
+          <input type="text" name="mobile" placeholder="Enter Your Mobile" style="text-align:center" required><br>
+          <input type="email" name="mail" placeholder="Enter Your Email" style="text-align:center" required><br>
+          <textarea name="password" rows="4" cols="50" placeholder="Enter your messege/querries here..." style="text-align:center" required></textarea>
+            <br>
+            <a routerLink="home">
+              <input type="submit" value="Send Request" (click)="contactEvent(myName.value)"><br>
+            </a>
+        </div>
+    </div>
+</form>
+</div><br>
+<div class="container" style="text-align: center;">
+    <p><span class="glyphicon glyphicon-envelope"></span>Reach by mail :<b>contact@redressalsystem.com</b></p>
+    <p><span class="glyphicon glyphicon-phone-alt"></span>Reach by phone :<b>+91 7770081004</b></p>
+    <p><span class="glyphicon glyphicon-thumbs-up"></span>Reach by Website :<b>www.complaintRedressal.com</b></p>
+</div>
+
+  <!-- Routing of Component -->
+<router-outlet></router-outlet>

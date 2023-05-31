@@ -1,0 +1,25 @@
+<div class="container" style="text-align: center;">
+    <h2 style="text-align:center" ><b style="color: chartreuse;">Customer Details</b></h2>
+    <div class="table">
+        <table class="table table-bordered table-stripped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Number</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of details">
+                    <td>{{c.customerId}}</td>
+                    <td>{{c.customerFullName}}</td>
+                    <td>{{c.mobileNumber}}</td>
+                    <td>{{c.customerEmail}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<router-outlet></router-outlet>

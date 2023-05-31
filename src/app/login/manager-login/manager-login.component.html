@@ -1,0 +1,21 @@
+<div class="container" style="text-align:center" >
+  <form onsubmit="manager-dashboard">
+    <div class="row">
+      <h2 style="text-align:center" ><b style="color: chartreuse;">Manager's Login</b></h2>
+  
+      <div class="col">  
+        <input type="text" name="username" placeholder="Username" style="text-align:center" #myName required><br>
+        <input type="password" name="password" placeholder="Password" style="text-align:center" required><br>
+        <a routerLink="manager-dashboard">
+          <input type="submit" value="Login" (click)="onClick(myName.value)"><br>
+        </a><br>
+        <a routerLink="managerSignup">          
+          <input type="submit" value="SignUp" style="color: orangered;" (click)="signUp()">
+        </a>
+      </div><br>
+    </div>
+  </form>
+</div>
+
+<!-- Routing of Component -->
+<router-outlet></router-outlet>

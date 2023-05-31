@@ -1,0 +1,29 @@
+<div class="container" style="text-align: center;">
+    <form action="/action_page.php">
+        <div class="row">
+            <h2 style="text-align:center" ><b style="color: chartreuse;">Give your Feedback</b></h2>
+
+            <div class="col" style="text-align: center;">
+                <input type="text" name="name" placeholder="Enter Your FullName" style="text-align:center" #myName required><br>
+                
+                <input type="text" name="mobile" maxlength="10" placeholder="Enter Your Mobile" style="text-align:center" required><br>
+                
+                <input type="email" name="mail" placeholder="Enter Your Email" style="text-align:center" required><br>
+                
+                <input type="text" name="city" placeholder="Enter your City" style="text-align:center" required><br>
+                
+                <input type="text" name="pincode" maxlength="6" placeholder="Enter Your Pin Code" style="text-align:center" required><br>
+      
+                <textarea name="feedback" rows="4" cols="50" placeholder="Write a brief of your feedback here..." style="text-align:center" required></textarea><br>
+
+                <input type="submit" value="Send Request" (click)="contactEvent(myName.value)"><br>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+
+<router-outlet></router-outlet>

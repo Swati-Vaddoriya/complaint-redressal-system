@@ -1,0 +1,24 @@
+<div class="container" style="text-align: center;">
+  <div class="row">
+    <h2 style="text-align:center" ><b style="color: chartreuse;">Complaint Dashboard</b></h2>
+  <h3>Please press the button to operate your request...</h3>
+    <a routerLink="raise">          
+        <input type="submit" value="Raise Complaint" (click)="onRaise()">
+      </a><br>
+
+      <a routerLink="view">          
+        <input type="submit" value="View Complaint" (click)="viewComplaint()">
+      </a><br>
+
+      <a routerLink="track">          
+        <input type="submit" value="Track Complaint" (click)="trackComplaint()">
+      </a><br>
+
+      <a routerLink="feedaback">          
+        <input type="submit" value="Your Feedback" (click)="yourFeedaback()">
+      </a><br>
+  </div>
+</div>
+
+<!-- Routing -->
+<router-outlet></router-outlet>

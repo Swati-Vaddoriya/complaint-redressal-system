@@ -1,0 +1,24 @@
+<div class="container" style="text-align: center;">
+    <div class="row">
+      <h2 style="text-align:center" ><b style="color: chartreuse;">Engineer's Dashboard</b></h2>
+    <h3>Please press the button to operate your request...</h3>
+      <a routerLink="users">          
+          <input type="submit" value="View Users" (click)="viewUsers()">
+        </a><br>
+  
+        <a routerLink="complaints">          
+          <input type="submit" value="View Complaints" (click)="viewComplaints()">
+        </a><br>
+  
+        <a routerLink="engineers">          
+          <input type="submit" value="View Engineers" (click)="viewEngineers()">
+        </a><br>
+  
+        <a routerLink="managers">          
+          <input type="submit" value="View Managers" (click)="  viewManagers()">
+        </a><br>
+    </div>
+  </div>
+  
+  <!-- Routing -->
+  <router-outlet></router-outlet>
